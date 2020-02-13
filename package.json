@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/tetsuyaohira/atcoder-typescript/issues"
   },
-  "homepage": "https://github.com/tetsuyaohira/atcoder-typescript#readme"
+  "homepage": "https://github.com/tetsuyaohira/atcoder-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
 }
