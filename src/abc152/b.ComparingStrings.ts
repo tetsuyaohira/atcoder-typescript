@@ -22,4 +22,3 @@ if (a == b) {
     }
 }
 console.log(result);
-
