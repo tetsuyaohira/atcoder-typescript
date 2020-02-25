@@ -1,11 +1,11 @@
-import * as fs from 'fs';
+import fs from 'fs';
 
 //in
 //
 //out
 //
-const main = (inp:string) => {
+const main = (inp: string) => {
 
 };
 
-main(fs.readFileSync('/dev/stdin','utf8').trim());
+main(fs.readFileSync('/dev/stdin', 'utf8').trim());
