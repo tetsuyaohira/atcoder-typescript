@@ -2,16 +2,19 @@ import * as fs from 'fs';
 
 namespace AtCoder.abc001 {
 
-    export class Program {
+    class Program {
         /**
          * in
          *
          * out
          *
          */
-        static main(inp: string): void {
+        main(inp: string): void {
         }
     }
+
+    const prg = new Program();
+    prg.main(fs.readFileSync('/dev/stdin', 'utf8').trim());
 }
 
-AtCoder.abc001.Program.main(fs.readFileSync('/dev/stdin', 'utf8').trim());
+
