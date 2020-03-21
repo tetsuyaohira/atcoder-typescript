@@ -3,18 +3,25 @@ import * as fs from 'fs';
 namespace AtCoder.abc001 {
 
     class Program {
+        args: string[];
+
+        constructor(args: string[]) {
+            this.args = args;
+        }
+
         /**
          * in
          *
          * out
          *
          */
-        main(inp: string): void {
+        main(): void {
         }
     }
 
-    const prg = new Program();
-    prg.main(fs.readFileSync('/dev/stdin', 'utf8').trim());
+    const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
+    const prg = new Program(args);
+    prg.main();
 }
 
 
