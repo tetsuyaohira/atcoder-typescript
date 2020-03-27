@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 namespace AtCoder.abc001 {
 
-    class Program {
+    export class Program {
         args: string[];
 
         constructor(args: string[]) {
@@ -19,9 +19,10 @@ namespace AtCoder.abc001 {
         }
     }
 
-    const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
-    const prg = new Program(args);
-    prg.main();
 }
+
+const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
+const prg = new AtCoder.abc001.Program(args);
+prg.main();
 
 
