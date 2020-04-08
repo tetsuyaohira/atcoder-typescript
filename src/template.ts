@@ -15,14 +15,11 @@ namespace AtCoder.abc001 {
          * out
          *
          */
-        main(this: { args: string[] }): void {
+        main(this: Program): void {
         }
     }
-
 }
 
 const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
 const prg = new AtCoder.abc001.Program(args);
 prg.main();
-
-
