@@ -15,7 +15,7 @@ namespace AtCoder.abc001 {
          * out
          *
          */
-        main(): void {
+        main(this: { args: string[] }): void {
         }
     }
 
