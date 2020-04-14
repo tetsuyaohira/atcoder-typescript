@@ -3,7 +3,7 @@ import * as fs from 'fs';
 namespace AtCoder.abc001 {
 
     export class Program {
-        args: string[];
+        private args: string[];
 
         constructor(args: string[]) {
             this.args = args;
