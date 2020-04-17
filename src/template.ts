@@ -19,5 +19,5 @@ namespace AtCoder.abc001 {
 }
 
 const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
-const prg = new AtCoder.abc001.Program(args);
+const prg: AtCoder.abc001.Program = new AtCoder.abc001.Program(args);
 prg.main();
