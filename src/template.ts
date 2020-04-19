@@ -4,7 +4,7 @@ namespace AtCoder.abc001 {
 
     export class Program {
 
-        constructor(private readonly args: string[]) {
+        constructor(private readonly args: string[][]) {
         }
 
         /**
@@ -18,6 +18,6 @@ namespace AtCoder.abc001 {
     }
 }
 
-const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
+const args: string[][] = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n').map(r => r.split(' '));
 const prg: AtCoder.abc001.Program = new AtCoder.abc001.Program(args);
 prg.main();
