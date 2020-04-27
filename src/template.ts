@@ -2,22 +2,28 @@ import * as fs from 'fs';
 
 namespace AtCoder.abc001 {
 
-    export class Program {
+    interface Task {
+        args: string[][];
 
-        constructor(private readonly args: string[][]) {
+        main(this: Task): void;
+    }
+
+    export class TaskA implements Task {
+
+        constructor(public readonly args: string[][]) {
         }
 
         /**
-         * in
          *
-         * out
          *
          */
-        main(this: Program): void {
+        main(this: Task): void {
+
+            console.log(this.args[0])
         }
     }
 }
 
 const args: string[][] = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n').map(r => r.split(' '));
-const prg: AtCoder.abc001.Program = new AtCoder.abc001.Program(args);
+const prg: AtCoder.abc001.TaskA = new AtCoder.abc001.TaskA(args);
 prg.main();
