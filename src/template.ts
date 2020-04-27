@@ -4,22 +4,13 @@ namespace AtCoder.abc001 {
 
     interface Task {
         args: string[][];
-
         main(this: Task): void;
     }
 
     export class TaskA implements Task {
-
         constructor(public readonly args: string[][]) {
         }
-
-        /**
-         *
-         *
-         */
         main(this: Task): void {
-
-            console.log(this.args[0])
         }
     }
 }
