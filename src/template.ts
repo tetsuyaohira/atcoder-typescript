@@ -15,7 +15,7 @@ namespace AtCoder.abc001 {
         public constructor(public readonly args: string[][]) {
         }
 
-        public main(this: AtCoder.Task): void {
+        public main(this: TaskA): void {
         }
     }
 
