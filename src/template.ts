@@ -1,16 +1,19 @@
 import * as fs from 'fs';
 
-namespace AtCoder.abc001 {
+namespace AtCoder {
+    export interface Task {
+        readonly args: string[][];
 
-    interface Task {
-        args: string[][];
         main(this: Task): void;
     }
+}
 
-    export class TaskA implements Task {
+namespace AtCoder.abc001 {
+    export class TaskA implements AtCoder.Task {
         constructor(public readonly args: string[][]) {
         }
-        main(this: Task): void {
+
+        main(this: AtCoder.Task): void {
         }
     }
 }
