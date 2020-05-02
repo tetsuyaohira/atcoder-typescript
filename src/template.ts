@@ -20,7 +20,7 @@ namespace AtCoder.abc001 {
     }
 
     const args: string[][] = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n').map(r => r.split(' '));
-    const task: TaskA = new TaskA(args);
+    const task: AtCoder.Task = new TaskA(args);
     task.main();
 }
 
