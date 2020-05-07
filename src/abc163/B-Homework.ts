@@ -22,10 +22,10 @@ namespace AtCoder.abc163 {
                 return acc + cur
             }, 0);
 
-            if (n<sum) {
+            if (n < sum) {
                 console.log(-1);
             } else {
-                console.log(n-sum);
+                console.log(n - sum);
             }
 
         }
