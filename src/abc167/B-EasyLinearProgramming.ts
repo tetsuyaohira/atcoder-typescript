@@ -6,6 +6,3 @@ ans = (a >= k) ? k : a;
 const kk = (a + b >= k) ? 0 : k - (a + b);
 ans -= (c >= kk) ? kk : c;
 console.log(ans);
-
-
-
