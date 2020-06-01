@@ -23,7 +23,6 @@ namespace AtCoder.abc163 {
             const a: number[] = this.args[1].split(' ').map(Number);
             const ans: any = {};
 
-
             a.forEach(x => {
                 if (isNaN(ans[x])) {
                     ans[x] = 0;

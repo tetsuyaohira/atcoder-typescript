@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 
-
 //in
 // 4 150
 // 150 140 100 200

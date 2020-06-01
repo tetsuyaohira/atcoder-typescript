@@ -6,4 +6,3 @@ if (Math.abs(x - a) < Math.abs(x - b)) {
 } else {
     console.log('B');
 }
-
