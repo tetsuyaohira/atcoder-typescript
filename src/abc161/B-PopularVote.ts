@@ -33,7 +33,7 @@ namespace AtCoder.abc001 {
             // console.log(1 / (4 * m));
             for (let i = 0; i < m; i++) {
                 // console.log(sorted[i]);
-                if (sorted[i]/sum < 1 / (4 * m)) {
+                if (sorted[i] / sum < 1 / (4 * m)) {
                     console.log('No');
                     return;
                 }
