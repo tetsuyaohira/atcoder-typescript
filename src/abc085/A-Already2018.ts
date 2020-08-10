@@ -7,7 +7,7 @@ namespace AtCoder.abc086 {
 
         main(this: Program): void {
             const [s]: string[] = this.args[0];
-            console.log (s.replace('2017', '2018'));
+            console.log(s.replace('2017', '2018'));
         }
     }
 }

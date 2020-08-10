@@ -17,14 +17,14 @@ namespace AtCoder.abc001 {
 
         public main(this: TaskA): void {
 
-            const r :number = +this.args[0][0];
-            const g :number = +this.args[1][0];
+            const r: number = +this.args[0][0];
+            const g: number = +this.args[1][0];
 
             // (2032 + 2002) /2 = 2017
             // (x + 2002) /2 = 2017
             // (2017*2) - 2002 = 2032
 
-            console.log(g*2-r);
+            console.log(g * 2 - r);
         }
     }
 
