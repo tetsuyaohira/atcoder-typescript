@@ -10,8 +10,8 @@ namespace AtCoder.abc007 {
          *  3
          */
         main(inp: string): void {
-            const [n,i] :number[] = inp.split(' ').map(Number);
-            console.log(n-i+1);
+            const [n, i]: number[] = inp.split(' ').map(Number);
+            console.log(n - i + 1);
         }
     }
 

@@ -4,6 +4,7 @@ namespace AtCoder.abc109 {
 
     class ProgramB {
         inp: string;
+
         /**
          9
          basic

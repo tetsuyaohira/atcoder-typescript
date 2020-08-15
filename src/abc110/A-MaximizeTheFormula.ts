@@ -11,7 +11,7 @@ namespace AtCoder.abc110 {
          */
         main(inp: string): void {
             const abc: number[] = inp.split(' ').map(Number);
-            const abcSorted:number[] = abc.sort((a, b) => b - a);
+            const abcSorted: number[] = abc.sort((a, b) => b - a);
 
             const x: string = abcSorted.slice(0, 2).join('');
             const y: string = abcSorted.slice(2).join('');
