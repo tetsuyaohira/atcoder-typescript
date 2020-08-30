@@ -3,8 +3,10 @@ import * as fs from 'fs';
 namespace AtCoder.abc162 {
 
     export class Program {
+        args: string[];
 
-        constructor(private readonly args: string[]) {
+        constructor(args: string[]) {
+            this.args = args;
         }
 
         /**
@@ -14,19 +16,15 @@ namespace AtCoder.abc162 {
          *
          */
         main(this: Program): void {
-            const n: string = this.args[0];
-
-            let flg = false;
-            n.split('').some((x) => {
-                if (x === '7') flg = true;
+            const s: string = this.args[0];
+            const ans: boolean = s.split('').some(x => {
+                return (x === '7');
             });
-
-            console.log(flg ? 'Yes' : 'No');
-
+            console.log(ans ? 'Yes' : 'No');
         }
     }
 }
 
 const args = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
-const prg: AtCoder.abc162.Program = new AtCoder.abc162.Program(args);
+const prg = new AtCoder.abc162.Program(args);
 prg.main();
