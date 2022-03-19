@@ -1,25 +1,22 @@
 import {readFileSync} from "fs";
 
-const [a, b, c]: number[] = readFileSync('/dev/stdin', 'utf8').trim().split(' ').map(Number);
+main();
 
-// 123 456 100
-// 200
-main(a, b, c).then();
+async function main() {
+    const [a, b, c] = await getArgs();
+    await calc(a, b, c);
+}
 
-async function main(a: number, b: number, c: number) {
+async function getArgs() {
+    return readFileSync('/dev/stdin', 'utf8').trim().split(' ').map(Number);
+}
 
-    // const [q, w, e]: number[] = await getArgs();
-
+async function calc(a: number, b: number, c: number) {
     for (let i = c; i <= b; i = i + c) {
         if (i >= a && i <= b) {
             console.log(i);
             return;
         }
     }
-
     console.log(-1);
 }
-
-// async function getArgs() {
-//     return readFileSync(readFileSync('/dev/stdin', 'utf8').trim());
-// }
